@@ -1,0 +1,15 @@
+/* ====================== Core Styles ====================== */
+html {
+	text-rendering:optimizeLegibility;
+	position: relative; //for sticky footer
+	min-height: 100%; //for sticky footer
+}
+body { 
+	@include helvetica;
+	font-size:0.875em;/* ~14px */
+	background-color:#f0f0ed;
+	margin: 0 0 100px 0; /* for sticky footer bottom = footer height */
+}
+.clear {clear:both;}
+a:hover {text-decoration: none;-webkit-tap-highlight-color: rgba(0,0,0,0);} //for iOS dark highlight
+a:link {-webkit-tap-highlight-color: rgba(0,0,0,0);} //for iOS dark highlight
