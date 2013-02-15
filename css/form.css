@@ -224,3 +224,8 @@ li.back-btn .link {
 #fo31li1 #Field2 {width:100%;}
 
 #fo31li1 span label {text-align:left;}
+
+
+/*Job Alert Signup Form*/
+#form34 p.error {display:none !important;}
+#form34 #fo34li5 {margin: 20px 0 20px 0;}

@@ -4,6 +4,7 @@
 
 @import "partials/mixins.scss";
 @import "partials/core.scss";
+@import "partials/colorbox.scss";
 
 //==========Global Elements
 
@@ -244,6 +245,10 @@ a {
 	background-repeat: no-repeat;
 	&:hover {background-color:#d16d6d;}
 	}
+#job-alert {
+	display:none;
+	overflow:hidden;
+}//job-alert
 }//email-signup
 .mission {
 	border-bottom:6px solid #e0e0dc;
