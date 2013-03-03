@@ -73,9 +73,12 @@ p {
 	font-size:1.1em;
 	margin-bottom:1.6em;
 }//p
+p.job-date-posted {
+	color: #8d8d8e;
+	font-size:1.0em;
+}//p.job-date-posted
 h1 {
 	font-size:1.9em;
-	margin:0 0 0.2em 0;
 }
 h2 {
 	font-size:1.3em;
@@ -95,7 +98,8 @@ li {
 }//ul
 h6 {
 	font-size:1.2em;
-	margin: 0 0 1.3em 0;
+	margin: 0 0 0.3em 0;
+	line-height:1.5em;
 strong {
 		color:#5C9055;
 }//span

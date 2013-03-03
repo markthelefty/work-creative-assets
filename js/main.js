@@ -13,7 +13,7 @@ Moment JS Converts Date Format Plugin 1.7.2
 Moment JS Settings
 *********************************************/
 $(function () {
-  $('.date').each(function (index, dateElem) {
+  $('.date, .job-date').each(function (index, dateElem) {
     var $dateElem = $(dateElem);
     var formatted = moment($dateElem.text(), 'MM-DD-YYYY').format('MMMM D');
     $dateElem.text(formatted);
