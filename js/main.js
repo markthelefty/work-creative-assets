@@ -3,6 +3,27 @@ Minified JS
 *********************************************/
 
 
+
+
+/*********************************************
+XX Days Old Job Alert Message
+*********************************************/
+$(function() {
+  var jobDateText = $(".job-date").html()
+    , jobDate = new Date(jobDateText)
+    , today = new Date()
+    , thirtyDaysInMS = 30 * 24 * 60 * 60 * 1000
+    , differenceInMS = Math.abs(today - jobDate)
+    , differenceInDays = Math.floor(differenceInMS / 1000 / 60 / 60 / 24);
+
+  if (differenceInMS > thirtyDaysInMS) $(".date-message").show();
+  $("span.daysOld").html(differenceInDays);
+});
+
+
+
+
+
 /*********************************************
 Moment JS Converts Date Format Plugin 1.7.2
 *********************************************/
@@ -328,6 +349,29 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 
 
 
+/*********************************************
+Wufoo form Embed JS (Feedback Form)
+*********************************************/
+var z7x3z9;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'designdelux', 
+'formHash':'z7x3z9', 
+'autoResize':true,
+'height':'605',
+'async':true,
+'header':'hide', 
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { z7x3z9 = new WufooForm();z7x3z9.initialize(options);z7x3z9.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');
+
+
+
+
+
 
 
 /*********************************************
@@ -366,6 +410,21 @@ function resizeTheColorbox(height) {
   $(document).bind('cbox_complete', function(){
   resizeTheColorbox(__savedHeight);
   });
+  
+
+/*********************************************
+Feedback Form Settings
+*********************************************/
+$(".feedback-tab").click(function () {
+    margin = +$('#feedback').css('margin-left').replace('px', '');
+    if (margin < 0) {
+        $('#feedback').animate({marginLeft: "0px"}, 200).addClass('feedback-shadow');
+        $('.feedback-tab').attr('src', 'http://dsavlem5iobro.cloudfront.net/img/feedback-tab-in.png');
+    } else {
+        $('#feedback').animate({marginLeft: "-400px"}, 200).removeClass('feedback-shadow');
+        $('.feedback-tab').attr('src', 'http://dsavlem5iobro.cloudfront.net/img/feedback-tab-out.png');
+    }
+});
 			
 			
 			

@@ -229,3 +229,6 @@ li.back-btn .link {
 /*Job Alert Signup Form*/
 #form34 p.error {display:none !important;}
 #form34 #fo34li5 {margin: 20px 0 20px 0;}
+
+/*Feedback Form*/
+#form18 p.error {margin: 0% 0 0 1% !important}
